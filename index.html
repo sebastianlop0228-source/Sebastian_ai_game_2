@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hills With Eyes</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div id="game-root">
+      <canvas id="world"></canvas>
+      <div id="hud" aria-live="polite">
+        <div class="hud-pill"><span class="hud-label">Eyes</span><span id="eye-count">0/5</span></div>
+        <div class="hud-pill time-pill" id="time-state">Day</div>
+        <div class="hud-pill gate-pill" id="gate-state">Gate sealed</div>
+      </div>
+      <div id="center-dot"></div>
+      <button id="start" type="button">Enter the Hills</button>
+      <div id="ending" hidden>
+        <div class="ending-title">The gate remembers you.</div>
+        <button id="restart" type="button">Dream Again</button>
+      </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
